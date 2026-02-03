@@ -1,6 +1,6 @@
-# 📡 Telecom Knowledge Assistant (RAG + Endee)
+# Telecom Knowledge Assistant (RAG + Endee)
 
-## 📌 Overview
+## Overview
 
 This project is a **Retrieval-Augmented Generation (RAG)** based Telecom Knowledge Assistant.
 It answers telecom and networking-related questions using **semantic search** over
@@ -11,7 +11,7 @@ for efficient information retrieval.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Traditional keyword-based search systems fail to understand the meaning of user queries.
 This project solves the problem by:
@@ -22,7 +22,7 @@ This project solves the problem by:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 1. Telecom documents are stored as text files
 2. Documents are converted into embeddings using Sentence Transformers
@@ -34,7 +34,7 @@ This project solves the problem by:
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - Python
 - Sentence Transformers
@@ -45,7 +45,7 @@ This project solves the problem by:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 telecom-rag-endee/
 │
@@ -59,11 +59,18 @@ telecom-rag-endee/
 
 ---
 
-## ⚙️ Setup Instructions
+## How Endee Is Used
 
-### 1️⃣ Clone the repository
+Endee is used as the vector database layer in the system design.
+The Endee repository was forked and reviewed to align the vector storage design with Endee’s indexing architecture.
+Embeddings are stored in an Endee-compatible vector format to support semantic search and RAG workflows.
 
-```bash
+---
+
+## Setup Instructions
+
+1️⃣ Clone the repository
+
 git clone https://github.com/MaheshPreddy/telecom-rag-endee.git
 cd telecom-rag-endee
 
@@ -80,7 +87,9 @@ python ingest.py
 5️⃣ Run the application
 streamlit run app.py
 
-❓ Example Questions
+---
+
+## Example Questions
 
 What is TCP?
 
@@ -88,7 +97,6 @@ What is UDP?
 
 What is DNS?
 
-Explain the OSI model
+Explain the OSI model?
 
-Difference between 4G and 5G
-```
+Difference between 4G and 5G?
