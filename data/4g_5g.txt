@@ -1,0 +1,2 @@
+4G LTE provides high-speed mobile data using packet switching.
+5G offers ultra-low latency, higher bandwidth, and supports massive IoT.

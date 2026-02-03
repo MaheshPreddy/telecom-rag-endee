@@ -1,0 +1,2 @@
+UDP is a connectionless transport protocol.
+It is faster than TCP but does not guarantee delivery or ordering.

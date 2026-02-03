@@ -1,0 +1,2 @@
+DNS (Domain Name System) converts human-readable domain names into IP addresses.
+It allows users to access websites without remembering numeric IPs.

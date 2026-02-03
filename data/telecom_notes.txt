@@ -1,0 +1,9 @@
+OSI Model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, Application.
+
+TCP is a connection-oriented protocol that ensures reliable data transmission.
+UDP is connectionless and faster but unreliable.
+
+4G LTE provides high-speed data using packet switching.
+5G offers ultra-low latency and supports IoT and smart applications.
+
+DNS converts domain names into IP addresses.
