@@ -46,3 +46,49 @@ This project solves the problem by:
 ---
 
 ## 📂 Project Structure
+
+telecom-rag-endee/
+│
+├── app.py # Streamlit UI
+├── ingest.py # Document ingestion & embedding
+├── search.py # Semantic search & RAG logic
+├── data/ # Telecom knowledge files
+├── README.md
+├── requirements.txt
+└── vectors.pkl # Generated vector store
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/MaheshPreddy/telecom-rag-endee.git
+cd telecom-rag-endee
+
+2️⃣ Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Ingest data
+python ingest.py
+
+5️⃣ Run the application
+streamlit run app.py
+
+❓ Example Questions
+
+What is TCP?
+
+What is UDP?
+
+What is DNS?
+
+Explain the OSI model
+
+Difference between 4G and 5G
+```
