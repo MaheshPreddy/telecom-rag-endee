@@ -50,3 +50,11 @@ if __name__ == "__main__":
     print("\nAnswer:\n")
     print(answer)
 
+def search_answer(query):
+    """
+    Wrapper function used by Streamlit UI.
+    Performs retrieval + answer generation.
+    """
+    context = retrieve_context(query)
+    answer = generate_answer(query, context)
+    return answer
