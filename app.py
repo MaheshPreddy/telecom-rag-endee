@@ -2,14 +2,14 @@
 import streamlit as st
 from search import search_answer   
 
-# ---------------- PAGE CONFIG ----------------
+
 st.set_page_config(
     page_title="Telecom Knowledge Assistant",
     page_icon="📡",
     layout="centered"
 )
 
-# ---------------- HEADER ----------------
+
 st.markdown(
     """
     <h1 style="text-align:center;">📡 Telecom Knowledge Assistant</h1>
@@ -21,7 +21,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------------- SIDEBAR ----------------
+
 with st.sidebar:
     st.header("📘 Project Info")
     st.markdown(
@@ -45,7 +45,7 @@ with st.sidebar:
         """
     )
 
-# ---------------- MAIN INPUT ----------------
+
 st.subheader("🧠 Ask a Telecom Question")
 
 query = st.text_input(
@@ -53,7 +53,7 @@ query = st.text_input(
     placeholder="e.g., What is TCP and how is it different from UDP?"
 )
 
-# ---------------- SEARCH & ANSWER ----------------
+
 if query:
     with st.spinner("🔍 Searching relevant telecom knowledge..."):
         answer = search_answer(query)
@@ -61,7 +61,7 @@ if query:
     st.markdown("### 📄 Answer")
     st.success(answer)
 
-# ---------------- FOOTER ----------------
+
 st.markdown(
     """
     <hr>
